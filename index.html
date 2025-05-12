@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Example</title>
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome CSS (Optional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar structure -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <img class="logo" src="images/logo.png" alt="Logo" />
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu-items">
+            <li class="nav-item active ms-lg-5">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Casino</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RoyalKing Originals</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Hot Games</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Slot Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Casino</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Providers</a></li>
+            <li class="nav-item">
+              <picture>
+                <source srcset="images/aviator.avif" type="image/avif" />
+                <img
+                  id="aviator-logo"
+                  src="images/aviator.png"
+                  alt="Aviator logo"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Login/Register always on the right -->
+        <div class="d-flex gap-2 ms-auto">
+          <button class="login-btn">Login</button>
+          <button class="register-btn d-flex gap-2 align-items-center">
+            <i class="fa-solid fa-plus"></i>
+            <strong>Registration</strong>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navbar (visible only on screens <=1023px) -->
+    <nav class="navbar navbar-dark bg-dark sticky-top nav-option">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Logo -->
+
+        <!-- Navbar Links -->
+        <div
+          class="d-flex align-items-center justify-content-start flex-grow-1 overflow-auto"
+          style="white-space: nowrap; max-width: 100%"
+        >
+          <a class="nav-link text-white px-3" href="#">Home</a>
+          <a class="nav-link text-white px-3" href="#">Casino</a>
+          <a class="nav-link text-white px-3" href="#">RoyalKing Originals</a>
+          <a class="nav-link text-white px-3" href="#">Hot Games</a>
+          <a class="nav-link text-white px-3" href="#">Slot Games</a>
+          <a class="nav-link text-white px-3" href="#">Live Casino</a>
+          <a class="nav-link text-white px-3" href="#">Sports</a>
+          <a class="nav-link text-white px-3" href="#">Providers</a>
+          <picture>
+            <source srcset="images/aviator.avif" type="image/avif" />
+            <img
+              id="aviator-logo"
+              src="images/aviator.png"
+              alt="Aviator logo"
+              style="height: 30px"
+            />
+          </picture>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid section px-3 px-md-4 my-4">
+      <div class="d-flex flex-column flex-md-row gap-3 equal-columns">
+        <div class="carousel h-100 w-100">
+          <div class="carousel-container">
+            <div
+              id="heroCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                  <img
+                    src="images/sl1.avif"
+                    class="d-block w-100 carousel-img"
+                    alt="Slide 1"
+                  />
+                  <div class="carousel-caption left-caption">
+                    <p>
+                      100 cool scooters in a mega giveaway: Enjoy RoyalKing
+                      crashes and win yours
+                    </p>
+                    <button class="carousel-btn">Play</button>
+                  </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                  <img
+                    src="images/sl2.avif"
+                    class="d-block w-100 carousel-img"
+                    alt="Slide 2"
+                  />
+                  <div class="carousel-caption left-caption">
+                    <p>
+                      Bet on cricket and win with David Warner, RoyalKing
+                      ambassador
+                    </p>
+                    <button class="carousel-btn">Join Now</button>
+                  </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                  <img
+                    src="images/sl3.avif"
+                    class="d-block w-100 carousel-img"
+                    alt="Slide 3"
+                  />
+                  <div class="carousel-caption left-caption">
+                    <p>
+                      Boost your chances with +500% bonus on your first deposit
+                    </p>
+                    <button class="carousel-btn">Get Bonus</button>
+                  </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                  <img
+                    src="images/sl4.avif"
+                    class="d-block w-100 carousel-img"
+                    alt="Slide 4"
+                  />
+                  <div class="carousel-caption left-caption">
+                    <p>
+                      100 cool scooters in a mega giveaway: Enjoy RoyalKing
+                      crashes and win yours
+                    </p>
+                    <button class="carousel-btn">Play</button>
+                  </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                  <img
+                    src="images/sl5.avif"
+                    class="d-block w-100 carousel-img"
+                    alt="Slide 5"
+                  />
+                  <div class="carousel-caption left-caption">
+                    <p>
+                      100 cool scooters in a mega giveaway: Enjoy RoyalKing
+                      crashes and win yours
+                    </p>
+                    <button class="carousel-btn">Play</button>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cashback position-relative">
+          <img style="height: 100%; width: 100%;" src="images/cashback.png" />
+          <div class="carousel-caption casino-caption">
+            <p class="ms-2">Cashback up to 30% on casinos</p>
+            <button class="casino-btn">Go to casino</button>
+          </div>
+        </div>
+
+        <div class="bonus position-relative">
+          <img style="height: 100%; width: 100%;" src="images/bonus.avif" />
+          <div class="carousel-caption casino-caption">
+            <p style="margin: 0px 10px">Bonus +500%</p>
+            <button class="casino-btn" style="margin:0px 10px">Get bonus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="cards-wrapper">
+          <div class="scooter card-box scooter-card">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="content">
+                <h3>RoyalKing giveaway</h3>
+                <p>100 scooters to win</p>
+              </div>
+              <div class="scooter-img">
+                <img src="images/scooter.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="bonuses card-box bonuses-card">
+            <div
+              class="d-flex justify-content-between align-items-center gap-2"
+            >
+              <div class="icon">
+                <i class="fa-solid fa-gift"></i>
+              </div>
+              <div class="content">
+                <h3>Promotions and bonuses</h3>
+              </div>
+              <div class="light-img">
+                <img src="images/present.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="drive card-box lucky-card">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="content">
+                <h3>RoyalKing Lucky Drive</h3>
+                <p>Giving away a Ferrari Roma and other prizes</p>
+              </div>
+              <div class="drive-img">
+                <img src="images/homepageLink.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex gap-3 w-100 mt-5 game-card">
+        <div class="spribe d-flex justify-content-between align-items-center">
+          <div class="content">
+            <h4>Spribe</h4>
+            <p>Live Games 24/7</p>
+          </div>
+          <div class="spribe-img">
+            <img src="images/spribe.png" />
+          </div>
+        </div>
+
+        <div class="spribe d-flex justify-content-between align-items-center">
+          <div class="content">
+            <h4>Casino</h4>
+            <p>Over 3000 games</p>
+          </div>
+
+          <div class="casino-img">
+            <img src="images/Casino.png" />
+          </div>
+        </div>
+
+        <div class="spribe d-flex justify-content-between align-items-center">
+          <div class="content">
+            <h4>Live-Games</h4>
+            <p>Live dealers</p>
+          </div>
+
+          <div class="live-img">
+            <img src="images/LiveGames.png" />
+          </div>
+        </div>
+
+        <div class="spribe d-flex justify-content-between align-items-center">
+          <div class="content">
+            <h4>Poker</h4>
+            <p>Free Tournaments</p>
+          </div>
+
+          <div class="poker-img">
+            <img src="images/poker1.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="game-section mt-5">
+        <div class="d-flex gap-3">
+          <!-- games block with background and padding -->
+          <div class="games image-section d-flex flex-column gap-4">
+            <!-- Now inside games -->
+            <div class="main d-flex gap-3">
+              <div class="win-img">
+                <img src="images/1win.png" />
+              </div>
+              <div class="text">RoyalKing games</div>
+            </div>
+
+            <!-- Game items -->
+            <div class="d-flex gap-4">
+              <div class="game-item">
+                <img src="images/crash.png" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/1win.png" />
+                  <div class="text">RoyalKing games</div>
+                </div>
+                <div class="subtext">Crash</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/mine.png" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/1win.png" />
+                  <div class="text">RoyalKing games</div>
+                </div>
+                <div class="subtext">Mine</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/plinko.png" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/1win.png" />
+                  <div class="text">RoyalKing games</div>
+                </div>
+                <div class="subtext">Plinko</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/hashdice.png" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/1win.png" />
+                  <div class="text">RoyalKing games</div>
+                </div>
+                <div class="subtext">Hashdice</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- poker block -->
+          <div class="poker">
+            <div class="main-content d-flex gap-3">
+              <div class="win-img">
+                <img src="images/poker1.png" />
+              </div>
+              <div class="text">Poker</div>
+            </div>
+
+            <div class="play-section d-flex gap-3">
+              <div class="bonus">
+                <p>Come in, play and win</p>
+                <button>Get bonus</button>
+              </div>
+              <div class="play-cards">
+                <img src="images/pokerbanner.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="game-section mt-5">
+        <div class="d-flex gap-3">
+          <!-- games block with background and padding -->
+          <div class="games image-section d-flex flex-column gap-4">
+            <!-- Now inside games -->
+            <div class="main d-flex gap-3">
+              <div class="win-img">
+                <img src="images/1win.png" />
+              </div>
+              <div class="text">RoyalKing games</div>
+            </div>
+
+            <!-- Game items -->
+            <div class="d-flex gap-4">
+              <div class="game-item">
+                <img src="images/1.webp" style=" height :110px" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Crash</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/2.webp" style=" height :110px"/>
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Mine</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/3.webp" style=" height :110px" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Plinko</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/4.webp" style=" height :110px"/>
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg"  />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Hashdice</div>
+              </div>
+            </div>
+               <div class="d-flex gap-4">
+              <div class="game-item">
+                <img src="images/5.webp" style=" height :110px" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Crash</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/6.webp" style=" height :110px"/>
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Mine</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/7.webp" style=" height :110px"  />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Plinko</div>
+              </div>
+
+              <div class="game-item">
+                <img src="images/8.webp" style=" height :110px" />
+                <div class="d-flex gap-2 mt-2 align-items-center img-section">
+                  <img src="images/evolution.svg" />
+                  <div class="text">Evolution</div>
+                </div>
+                <div class="subtext">Hashdice</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- poker block -->
+          <div class="poker">
+            <div class="main-content d-flex gap-3">
+              <div class="win-img">
+                <img src="images/poker1.png" />
+              </div>
+              <div class="text">Poker</div>
+            </div>
+
+            <div class="play-section d-flex gap-3">
+              <div class="bonus">
+                <p>Come in, play and win</p>
+                <button>Get bonus</button>
+              </div>
+              <div class="play-cards">
+                <img src="images/pokerbanner.webp" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box mt-5 d-flex justify-content-between">
+        <div class="arrow">
+          <img src="images/arrow2.png" />
+        </div>
+        <div class="main-content">
+          <h3>WELCOME BONUS</h3>
+          <h2>+ 200%</h2>
+          <h4>TO THE FIRST DEPOSIT</h4>
+          <div class="d-flex flex-column align-items-center mt-3">
+            <img class="small" src="images/arrow.svg" />
+            <img class="big" src="images/arrow.svg" />
+          </div>
+        </div>
+        <div class="arrorw">
+          <img src="images/arrow2.png" />
+        </div>
+      </div>
+
+      <div class="footer mt-5">
+        <div class="first d-flex align-items-center">
+          <img class="logo" src="images/logo.png" />
+          <div class="line"></div>
+        </div>
+
+        <div class="second d-flex gap-5 mt-4">
+          <div class="support">
+            <h4 style="color: #ffffff; font-size: 12px">Support</h4>
+            <p>Write to us if you still have any <br />questions!</p>
+            <p>+9199887622019</p>
+          </div>
+          <div class="contact">
+            <h4>SUPPORT CONTACTS</h4>
+            <div class="connect d-flex gap-3">
+              <p class="text">Technical support</p>
+              <p class="subtext">support@RoyalKing.social</p>
+            </div>
+          </div>
+
+          <!-- INFO section with dropdown on mobile -->
+          <div class="info-wrapper">
+            <div class="info">
+              <div class="info-header">
+                <h4>INFORMATION</h4>
+                <i class="fa fa-chevron-down dropdown-toggle-icon"></i>
+              </div>
+              <h5>Rules</h5>
+              <h5>Bonuses and promotions</h5>
+              <div class="mobile-dropdown">
+                <div class="mobile-first">
+                  <h5>Live</h5>
+                  <h5>Sports</h5>
+                  <h5>Promotions</h5>
+                  <h5>Live-games</h5>
+                </div>
+                <div class="mobile-second">
+                  <h5>Poker</h5>
+                  <h5>Casino</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Original large screen CATEGORIES section -->
+          <div class="category">
+            <h4>CATEGORIES</h4>
+            <div class="sub-category d-flex gap-3">
+              <div class="first-category">
+                <h5>Live</h5>
+                <h5>Sports</h5>
+                <h5>Promotions</h5>
+                <h5>Live-games</h5>
+              </div>
+              <div class="second-category">
+                <h5>Poker</h5>
+                <h5>Casino</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="line-two flex-grow mt-3"></div>
+
+        <div class="third d-flex justify-content-between">
+          <div class="icons d-flex gap-3">
+            <img src="images/telegram.png" />
+            <img src="images/youtube.jpg" />
+            <img src="images/instagram.png" />
+            <img src="images/facebook.webp" />
+            <img src="images/twitterx.webp" />
+            <img src="images/whatsapp.png" />
+            <img src="images/threads.jpg" />
+          </div>
+
+          <div class="icon-img d-flex gap-4">
+            <img src="images/uefa.svg" />
+            <img src="images/ufc.svg" />
+            <img src="images/wta.svg" />
+            <img src="images/fiba.svg" />
+            <img src="images/itf.svg" />
+            <img src="images/fifa.svg" />
+          </div>
+
+          <div class="faIcon d-flex gap-2">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="fifth d-flex justify-content-between">
+          <img src="images/visa.png" />
+          <img src="images/mastercard.png" />
+          <img src="images/G-pay.png" />
+          <img src="images/bitcoin.png" />
+          <img src="images/muchbetter.png" />
+          <img src="images/webmoney.svg" />
+          <img src="images/muchbetter.png" />
+          <img src="images/jcb.png" />
+          <img src="images/discover1.png" />
+          <img src="images/astropay.webp" />
+        </div>
+
+        <div class="line"></div>
+
+        <div class="fourth d-flex justify-content-between">
+          <div class="para">
+            <p>
+              © 2025 RoyalKing. NextGen Development Labs Ltd (the Republic of
+              Seychelles). All rights reserved. The content on this site is the
+              exclusive property of NextGen Development Labs Ltd. Unauthorized
+              reproduction, modification, distribution, publication,
+              transmission, or any form of copying is strictly prohibited.
+            </p>
+          </div>
+          <div class="cricket-img d-flex gap-3">
+            <img src="images/br.svg" />
+            <img src="images/betraja.png" />
+            <img src="images/casino-mentor.png" />
+            <img src="images/best-bitcoin-casino.png" />
+            <img src="images/cricket-betting-guru.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mob-footer mt-5">
+        <div class="first d-flex align-items-center">
+          <img class="logo" src="images/logo.png" />
+          <div class="line"></div>
+        </div>
+
+        <!-- HTML -->
+        <div class="mob-footer">
+          <div class="mob-second mt-4">
+            <h4>Information</h4>
+            <h5>Rule</h5>
+            <h5>Bonus and promotions</h5>
+
+            <!-- Dropdown icon on its own right-aligned line -->
+            <div class="icon-line">
+              <span class="icon" id="dropdownToggle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="dropdown-svg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <!-- Dropdown content -->
+            <div class="extra-items" id="dropdownContent">
+              <div class="item-pair">
+                <span class="left-side">Live</span>
+                <span class="right-side">Live Games</span>
+              </div>
+              <div class="item-pair">
+                <span class="left-side">Sports</span>
+                <span class="right-side">Poker</span>
+              </div>
+              <div class="item-pair">
+                <span class="left-side">Promotions</span>
+                <span class="right-side">Casino</span>
+              </div>
+            </div>
+          </div>
+         <div class="line mt-3"></div>
+<div class="mob-third mt-3">
+  <div class="sub-third d-flex flex-column">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="content">
+        <h4>Support</h4>
+        <p>Write to us if you still have any questions</p>
+      </div>
+      <div class="buttons">
+        <button id="chatBtn">Chat</button>
+        <button id="phoneBtn"><i class="fa-solid fa-phone"></i></button>
+       
+      </div>
+    </div>
+
+    <!-- Support Info Row (initially hidden) -->
+    <div id="supportInfo" class="support-info mt-2"></div>
+  </div>
+
+  <div class="icons-img d-flex justify-content-between mt-2">
+    <img src="images/uefa.svg" />
+    <img src="images/ufc.svg" />
+    <img src="images/wta.svg" />
+    <img src="images/fiba.svg" />
+    <img src="images/fifa.svg" />
+  </div>
+</div>
+
+
+
+
+          <div class="line"></div>
+
+          <div class="mob-four mt-3">
+            <h3>Social Networks</h3>
+            <div class="social-networks">
+              <img src="images/telegram.png" />
+            <img src="images/youtube.jpg" />
+            <img src="images/instagram.png" />
+            <img src="images/facebook.webp" />
+            <img src="images/twitterx.webp" />
+            <img src="images/whatsapp.png" />
+            <img src="images/threads.jpg" />
+            </div>
+           
+          </div>
+          <div class="line"></div>
+
+          <div class="fifth d-flex justify-content-between">
+          <img src="images/visa.png" />
+          <img src="images/mastercard.png" />
+          <img src="images/G-pay.png" />
+          <img src="images/bitcoin.png" />
+          <img src="images/muchbetter.png" />
+          <img src="images/webmoney.svg" />
+          <img src="images/muchbetter.png" />
+          <img src="images/jcb.png" />
+          <img src="images/discover1.png" />
+          <img src="images/astropay.webp" />
+        </div>
+        <div class="line"></div>
+
+        <div class="sixth d-flex justify-content-between">
+          <i class="fa-solid fa-mobile-screen sixth-icon"></i>
+          <i class="fa-solid fa-futbol sixth-icon"></i>
+          <i class="fa-solid fa-gift sixth-icon"></i>
+          <i class="fa-solid fa-gamepad sixth-icon"></i>
+          <i class="fa-solid fa-volleyball sixth-icon"></i>
+          <i class="fa-solid fa-bars sixth-icon"></i>
+
+        </div>
+        <div class="name-icon d-flex justify-content-between">
+          <h4>Main</h4> 
+          <h4>Sports</h4>
+          <h4>Free Money</h4>
+          <h4>Casino</h4>
+          <h4>Live Game</h4>
+          <h4>Menu</h4>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+<script>
+  const toggleBtn = document.getElementById("dropdownToggle");
+  const supportInfo = document.getElementById("supportInfo");
+  const chatBtn = document.getElementById("chatBtn");
+  const phoneBtn = document.getElementById("phoneBtn");
+  const svg = toggleBtn.querySelector("svg");
+
+  const email = "support@example.com";
+  const phone = "+123-456-7890";
+
+  function renderSupportRow(label, value) {
+    return `
+      <div class="support-row">
+        <span>${label}</span>
+        <span>${value}</span>
+      </div>
+    `;
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const showingBoth = supportInfo.innerHTML.includes(email) && supportInfo.innerHTML.includes(phone);
+
+    if (showingBoth) {
+      supportInfo.innerHTML = "";
+      svg.classList.remove("rotate");
+    } else {
+      supportInfo.innerHTML = `
+        ${renderSupportRow("Technical Support", email)}
+        ${renderSupportRow("Technical Support", phone)}
+      `;
+      svg.classList.add("rotate");
+    }
+  });
+
+  chatBtn.addEventListener("click", () => {
+    supportInfo.innerHTML = renderSupportRow("Technical Support", email);
+    svg.classList.remove("rotate");
+  });
+
+  phoneBtn.addEventListener("click", () => {
+    supportInfo.innerHTML = renderSupportRow("Technical Support", phone);
+    svg.classList.remove("rotate");
+  });
+</script>
+
+
+
+
+  
+  </body>
+</html>
